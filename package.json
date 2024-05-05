@@ -1,6 +1,5 @@
 {
   "name": "garua",
-  "packageManager": "yarn@4.2.1",
   "private": true,
   "workspaces": [
     "apps/*"
