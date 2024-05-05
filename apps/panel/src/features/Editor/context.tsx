@@ -1,4 +1,4 @@
-import EditorJS from "@editorjs/editorjs";
+import EditorJS, { BlockToolConstructable } from "@editorjs/editorjs";
 import {
   MutableRefObject,
   PropsWithChildren,
@@ -36,7 +36,8 @@ export default function EditorProvider(props: PropsWithChildren) {
           inlineToolbar: true,
         },
         header: {
-          class: Header,
+          //TODO: fix this
+          class: Header as unknown as BlockToolConstructable,
           inlineToolbar: true,
           config: {
             placeholder: "Enter a Header",
