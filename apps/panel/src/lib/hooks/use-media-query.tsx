@@ -1,20 +1,20 @@
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from 'react';
 
-type BreakPoint = "sm" | "md" | "lg" | "xl" | "2xl";
+type BreakPoint = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 
 export function getBreakPoint(): BreakPoint {
   const width = window.innerWidth;
 
   if (width >= 1536) {
-    return "2xl";
+    return '2xl';
   } else if (width >= 1280) {
-    return "xl";
+    return 'xl';
   } else if (width >= 1024) {
-    return "lg";
+    return 'lg';
   } else if (width >= 768) {
-    return "md";
+    return 'md';
   } else {
-    return "sm";
+    return 'sm';
   }
 }
 
@@ -26,10 +26,10 @@ export const useMediaQuery = (): BreakPoint => {
       setBreakpoint(getBreakPoint());
     };
 
-    window.addEventListener("resize", updateBreakpoint);
+    window.addEventListener('resize', updateBreakpoint);
 
     return () => {
-      window.removeEventListener("resize", updateBreakpoint);
+      window.removeEventListener('resize', updateBreakpoint);
     };
   }, []);
 

@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { useEditor } from "./useEditor";
+import { useEffect, useRef } from 'react';
+import { useEditor } from './useEditor';
 
 export function Editor() {
   const { initEditor } = useEditor();

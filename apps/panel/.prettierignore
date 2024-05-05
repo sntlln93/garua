@@ -1,0 +1,4 @@
+.prettierignorebuild 
+node_modules
+coverage
+dist

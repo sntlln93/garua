@@ -1,5 +1,5 @@
-import { DashboardLayout } from "./components/layouts/dashboard";
-import { Editor } from "./features/Editor";
+import { DashboardLayout } from './components/layouts/dashboard';
+import { Editor } from './features/Editor';
 
 function App() {
   return (

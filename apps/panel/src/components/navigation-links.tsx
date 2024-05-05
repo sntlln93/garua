@@ -1,31 +1,25 @@
-import {
-  FolderSearch,
-  Home,
-  NotebookPen,
-  PenLine,
-  type LucideIcon,
-} from "lucide-react";
+import { FolderSearch, Home, NotebookPen, PenLine, type LucideIcon } from 'lucide-react';
 
 export const links: NavLink[] = [
   {
-    title: "Inicio",
+    title: 'Inicio',
     icon: Home,
-    href: "/",
+    href: '/',
   },
   {
-    title: "Redactar",
+    title: 'Redactar',
     icon: PenLine,
-    href: "/patients",
+    href: '/patients',
   },
   {
-    title: "Notas",
+    title: 'Notas',
     icon: NotebookPen,
-    href: "/appointments",
+    href: '/appointments',
   },
   {
-    title: "Archivo",
+    title: 'Archivo',
     icon: FolderSearch,
-    href: "/appointments",
+    href: '/appointments',
   },
 ];
 
