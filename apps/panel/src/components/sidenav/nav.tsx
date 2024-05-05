@@ -5,7 +5,7 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import { NavProps } from "./types";
+import { NavProps } from "../navigation-links";
 
 export function Nav({ links, isCollapsed }: NavProps) {
   const { pathname } = { pathname: "false" };
