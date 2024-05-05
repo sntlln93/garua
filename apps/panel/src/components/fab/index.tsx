@@ -17,8 +17,8 @@ export function FAB() {
         <Button
           size="lg"
           className={cn(
-            'p-2 rounded-full shadow-lg focus:outline-none focus:ring-2',
-            'fixed right-4 bottom-4'
+            'rounded-full p-2 shadow-lg focus:outline-none focus:ring-2',
+            'fixed bottom-4 right-4'
           )}
         >
           <Menu />

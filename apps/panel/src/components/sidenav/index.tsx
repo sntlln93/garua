@@ -15,16 +15,16 @@ export default function SideNavbar() {
   return (
     <div
       className={cn(
-        'h-screen relative border-r px-3 pb-10 pt-24 transition-all duration-500 ease-in-out',
+        'relative h-screen border-r px-3 pb-10 pt-24 transition-all duration-500 ease-in-out',
         minWidth
       )}
     >
       <div className="absolute right-[-20px] top-7">
-        <Button variant="secondary" className="rounded-full p-2 border" onClick={toggleNav}>
+        <Button variant="secondary" className="rounded-full border p-2" onClick={toggleNav}>
           <ChevronRight
             className={
               isCollapsed
-                ? `transform rotate-180 transition-transform duration-500 ease-in-out`
+                ? `rotate-180 transform transition-transform duration-500 ease-in-out`
                 : undefined
             }
           />

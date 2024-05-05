@@ -13,7 +13,7 @@ export function Editor() {
   }, [initEditor]);
 
   return (
-    <div className=" bg-zinc-200 rounded-lg py-4">
+    <div className=" rounded-lg bg-zinc-200 py-4">
       <div id="editorjs"></div>
     </div>
   );

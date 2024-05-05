@@ -13,7 +13,7 @@ export function DashboardLayout({ children }: PropsWithChildren) {
     <div className="flex flex-row sm:min-w-[200px]">
       {navToDisplay === 'sidenav' && <SideNavbar />}
       {navToDisplay === 'tabs' && <FAB />}
-      <div className={`w-full py-5 px-10 ml-[${offset}]`}>
+      <div className={`w-full px-10 py-5 ml-[${offset}]`}>
         {/* <Breadcrumbs /> */}
         {children}
       </div>
