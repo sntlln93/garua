@@ -1,5 +1,5 @@
-declare module "@editorjs/paragraph" {
-  import { API, PasteEvent } from "@editorjs/editorjs";
+declare module '@editorjs/paragraph' {
+  import { API, PasteEvent } from '@editorjs/editorjs';
   interface ParagraphData {
     text: string;
   }

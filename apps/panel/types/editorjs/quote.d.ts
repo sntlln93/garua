@@ -1,5 +1,5 @@
-declare module "@editorjs/quote" {
-  import { API } from "@editorjs/editorjs";
+declare module '@editorjs/quote' {
+  import { API } from '@editorjs/editorjs';
 
   interface Config {
     quotePlaceholder: string;
@@ -54,13 +54,13 @@ declare module "@editorjs/quote" {
      */
     get settings(): [
       {
-        name: "left";
+        name: 'left';
         icon: string; //is svg strings
       },
       {
-        name: "center";
+        name: 'center';
         icon: string; //is svg strings
-      }
+      },
     ];
 
     static get sanitize(): {
@@ -79,11 +79,7 @@ declare module "@editorjs/quote" {
     save(blockContent: HTMLElement): Data;
     renderSettings(): TunesMenuConfig;
     _toggleTune(tune: string): void;
-    _make(
-      tagName: string,
-      classNames?: Array | string,
-      attributes?: object
-    ): HTMLElement;
+    _make(tagName: string, classNames?: Array | string, attributes?: object): HTMLElement;
   }
 
   export default Quote;

@@ -20,7 +20,8 @@ export function FAB() {
           className={cn(
             'rounded-full p-2 shadow-lg focus:outline-none focus:ring-2',
             'fixed bottom-4 right-4'
-          )}>
+          )}
+        >
           <Menu />
         </Button>
       </DropdownMenuTrigger>
@@ -45,7 +46,8 @@ function NavItem({ link }: { link: NavLink }) {
             variant: pathname === link.href ? 'default' : 'ghost',
             size: 'sm',
           })
-        )}>
+        )}
+      >
         <link.icon className="mr-2 h-4 w-4" />
         {link.title}
         {link.label && (

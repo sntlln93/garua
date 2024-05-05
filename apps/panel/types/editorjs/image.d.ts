@@ -1,5 +1,5 @@
-declare module "@editorjs/image" {
-  import { API } from "@editorjs/editorjs";
+declare module '@editorjs/image' {
+  import { API } from '@editorjs/editorjs';
   declare type PasteEvent = KeyboardEvent;
 
   interface Data {}

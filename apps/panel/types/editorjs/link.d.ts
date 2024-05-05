@@ -1,5 +1,5 @@
-declare module "@editorjs/link" {
-  import { API } from "@editorjs/editorjs";
+declare module '@editorjs/link' {
+  import { API } from '@editorjs/editorjs';
 
   declare type PasteEvent = KeyboardEvent;
 
