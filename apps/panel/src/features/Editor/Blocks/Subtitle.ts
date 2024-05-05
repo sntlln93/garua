@@ -1,4 +1,4 @@
-import { headingVariants } from '@/components/ui/typography';
+import { headingVariants } from '@/components/ui/typography-variants';
 import BaseTextBlock from './BaseTextBlock';
 
 export default class Subtitle extends BaseTextBlock {
