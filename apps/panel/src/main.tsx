@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
-import EditorProvider from './features/Editor/context.tsx';
+import EditorProvider from './features/Editor/components/BodyEditor/context.tsx';
 import { TooltipProvider } from './components/ui/tooltip.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

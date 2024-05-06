@@ -75,3 +75,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+[contentEditable=true]:empty:before {
+  content: attr(data-placeholder);
+  color: var(--muted);
+}

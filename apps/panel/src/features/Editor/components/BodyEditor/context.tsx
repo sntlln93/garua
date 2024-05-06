@@ -1,14 +1,8 @@
 import EditorJS, { API } from '@editorjs/editorjs';
 import { MutableRefObject, PropsWithChildren, createContext, useCallback, useRef } from 'react';
 
-import Paragraph from '@editorjs/paragraph';
 import Quote from '@editorjs/quote';
 import ImageTool from '@editorjs/image';
-import LinkTool from '@editorjs/link';
-import Title from './Blocks/Title';
-import Subtitle from './Blocks/Subtitle';
-import Lead from './Blocks/Lead';
-import Kicker from './Blocks/Kicker';
 
 export const EditorContext = createContext<{
   initEditor: () => void;
@@ -31,25 +25,9 @@ export default function EditorProvider(props: PropsWithChildren) {
       onChange: onChange,
       hideToolbar: false,
       holder: 'editorjs',
-      placeholder: 'Escribí acá',
+      placeholder: 'Escribí acá el cuerpo de la nota',
       inlineToolbar: true,
       tools: {
-        paragraph: {
-          class: Paragraph,
-          inlineToolbar: true,
-        },
-        Title: {
-          class: Title,
-        },
-        Subtitle: {
-          class: Subtitle,
-        },
-        Lead: {
-          class: Lead,
-        },
-        Kicker: {
-          class: Kicker,
-        },
         quote: {
           class: Quote,
           inlineToolbar: true,
@@ -66,10 +44,6 @@ export default function EditorProvider(props: PropsWithChildren) {
               byUrl: 'http://localhost:8008/fetchUrl', // Your endpoint that provides uploading by Url
             },
           },
-        },
-        linkTool: {
-          class: LinkTool,
-          inlineToolbar: false, //hide on add menu but show when selecting text
         },
       },
     });
