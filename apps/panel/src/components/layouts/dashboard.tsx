@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import SideNavbar from '@/components/sidenav';
+import Aside from '@/components/aside';
 import { useAtomValue } from 'jotai';
 import { dashboardContentLeftOffset } from '@/stores/ui';
 import { usePickNav } from '@/lib/hooks/use-hide-nav';
@@ -11,9 +11,9 @@ export function DashboardLayout({ children }: PropsWithChildren) {
 
   return (
     <div className="flex flex-row sm:min-w-[200px]">
-      {navToDisplay === 'sidenav' && <SideNavbar />}
+      {navToDisplay === 'sidenav' && <Aside />}
       {navToDisplay === 'tabs' && <FAB />}
-      <div className={`w-full px-10 py-5 ml-[${offset}]`}>
+      <div className={`flex-1 px-10 py-5 ml-[${offset}]`}>
         {/* <Breadcrumbs /> */}
         {children}
       </div>

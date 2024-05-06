@@ -6,7 +6,7 @@ import { useAtom, useAtomValue } from 'jotai';
 import { sideNavbarIsCollapsedAtom, sideNavbarMinWidthAtom } from '@/stores/ui';
 import { links } from '@/components/navigation-links';
 
-export default function SideNavbar() {
+export default function Aside() {
   const [isCollapsed, setIsCollapsed] = useAtom(sideNavbarIsCollapsedAtom);
   const minWidth = useAtomValue(sideNavbarMinWidthAtom);
 
@@ -17,8 +17,7 @@ export default function SideNavbar() {
       className={cn(
         'relative h-screen border-r px-3 pb-10 pt-24 transition-all duration-500 ease-in-out',
         minWidth
-      )}
-    >
+      )}>
       <div className="absolute right-[-20px] top-7">
         <Button variant="secondary" className="rounded-full border p-2" onClick={toggleNav}>
           <ChevronRight
